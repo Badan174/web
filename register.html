@@ -2,17 +2,21 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Đăng ký nhận thông tin - SEP</title>
+    <title>Đăng ký nhận thông tin - BLP</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div id="container">
         <div id="header">
-            <div class="logo">SEP</div>
-            <div class="search">
-                <input type="text" placeholder="Tìm kiếm...">
-                <button>Tìm</button>
+            <div class="header-left">Bioletterpress</div>
+            <div class="logo">BLP</div>
+            <div class="header-right">
+                <p>Your online source of trusted news</p>
+                <div class="search">
+                    <input type="text" placeholder="Enter search query">
+                    <button>Search</button>
+                </div>
             </div>
         </div>
 
@@ -24,76 +28,103 @@
                     <li><a href="news.html">NEWS</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                 </ul>
-                <div class="newsletter">
-                    <h3>Đăng ký nhận thông tin</h3>
-                    <form action="#" method="post">
-                        <input type="text" placeholder="Họ và tên">
-                        <input type="email" placeholder="Email">
-                        <button type="button">Đăng ký</button>
-                    </form>
+                
+                <div class="connect-box">
+                    <h3>Connect with us:</h3>
+                    <div class="social-icons">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-google-plus"></i>
+                    </div>
+                </div>
+
+                <div class="placeholder-box">
+                    <h3>Placeholder</h3>
+                    <div class="placeholder-content">
+                        <h4>Title Sample One</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius</p>
+                        <a href="#">Read more</a>
+                        <br><br>
+                        <h4>Title Sample One</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius</p>
+                        <a href="#">Read more</a>
+                    </div>
+                    <a href="#" class="view-more-btn">View More</a>
                 </div>
             </div>
             
             <div id="main-content">
                 <h2>Đăng ký nhận thông tin</h2>
+                <p>Điền thông tin bên dưới để nhận bản tin định kỳ. Các trường có dấu * là bắt buộc.</p>
+
                 <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="name">Tên của bạn (*)</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Địa chỉ email (*)</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="address">Địa chỉ</label>
-                        <textarea id="address" name="address"></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Giới tính:</label>
-                        <div class="form-radio-group">
-                            <label><input type="radio" name="gender" value="nam"> Nam</label>
-                            <label><input type="radio" name="gender" value="nu"> Nữ</label>
-                            <label><input type="radio" name="gender" value="khac"> Khác</label>
+                    <fieldset>
+                        <legend>Thông tin tài khoản</legend>
+                        <div class="form-group">
+                            <label for="name">Họ và tên *</label>
+                            <input type="text" id="name" name="name" value="Nguyễn Văn A" required>
                         </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="age">Độ tuổi:</label>
-                        <select id="age" name="age">
-                            <option value="">-- Chọn độ tuổi --</option>
-                            <option value="under18">Dưới 18</option>
-                            <option value="18to30">18 - 30</option>
-                            <option value="31to50">31 - 50</option>
-                            <option value="over50">Trên 50</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Bạn biết đến chúng tôi qua đâu?</label>
-                        <div class="form-radio-group">
-                            <label><input type="checkbox" name="source" value="google"> Google</label>
-                            <label><input type="checkbox" name="source" value="friend"> Bạn bè</label>
-                            <label><input type="checkbox" name="source" value="other"> Khác</label>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" value="ban@example.com" required>
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <label for="password">Mật khẩu * (tối thiểu 8 ký tự)</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại * (10 số, bắt đầu bằng số 0)</label>
+                            <input type="text" id="phone" name="phone" required>
+                        </div>
+                    </fieldset>
 
-                    <div class="form-group">
-                        <label for="needs">Nhu cầu của bạn</label>
-                        <select id="needs" name="needs">
-                            <option value="">Vui lòng chọn...</option>
-                            <option value="buy">Mua hàng</option>
-                            <option value="support">Hỗ trợ kỹ thuật</option>
-                            <option value="other">Khác</option>
-                        </select>
-                    </div>
+                    <fieldset>
+                        <legend>Thông tin cá nhân</legend>
+                        <div class="form-group">
+                            <label for="dob">Ngày sinh *</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Độ tuổi *</label>
+                            <input type="text" id="age" name="age" style="width: 50px;" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Giới tính *</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="gender" value="nam"> Nam</label>
+                                <label><input type="radio" name="gender" value="nu"> Nữ</label>
+                                <label><input type="radio" name="gender" value="khac"> Khác</label>
+                            </div>
+                        </div>
+                    </fieldset>
 
-                    <div class="form-group">
-                        <label><input type="checkbox" name="remember" value="yes"> Ghi nhớ thông tin cho lần sau</label>
-                    </div>
+                    <fieldset>
+                        <legend>Tùy chọn nhận tin</legend>
+                        <div class="form-group">
+                            <label>Chủ đề quan tâm</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="topic" value="news"> Tin tức</label>
+                                <label><input type="checkbox" name="topic" value="blog"> Blog</label>
+                                <label><input type="checkbox" name="topic" value="event"> Sự kiện</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="region">Khu vực</label>
+                            <select id="region" name="region">
+                                <option value="">-- Chọn khu vực --</option>
+                                <option value="mb">Miền Bắc</option>
+                                <option value="mt">Miền Trung</option>
+                                <option value="mn">Miền Nam</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Lời nhắn</label>
+                            <textarea id="message" name="message" placeholder="Bạn muốn nhận nội dung gì?"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label><input type="checkbox" name="agree" required> Tôi đồng ý với điều khoản sử dụng *</label>
+                        </div>
+                    </fieldset>
 
                     <div class="form-actions">
                         <button type="submit">Đăng ký</button>
@@ -105,21 +136,24 @@
 
         <div id="footer">
             <div class="footer-col">
-                <div class="footer-icon"><i class="fas fa-lock"></i></div>
-                <p>Bảo mật thông tin khách hàng tuyệt đối.</p>
+                <div class="footer-icon"><i class="fas fa-home"></i></div>
+                <p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
             </div>
             <div class="footer-col">
-                <div class="footer-icon"><i class="fas fa-user-circle"></i></div>
-                <p>Hỗ trợ khách hàng 24/7 nhiệt tình.</p>
+                <div class="footer-icon"><i class="fas fa-concierge-bell"></i></div>
+                <p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
             </div>
             <div class="footer-col">
-                <div class="footer-icon"><i class="fas fa-bullseye"></i></div>
-                <p>Mục tiêu mang lại giá trị tốt nhất.</p>
+                <div class="footer-icon"><i class="fas fa-globe"></i></div>
+                <p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
             </div>
             <div class="footer-col">
-                <div class="footer-icon"><i class="fas fa-leaf"></i></div>
-                <p>Cam kết phát triển bền vững cùng xã hội.</p>
+                <div class="footer-icon"><i class="fas fa-pencil-alt"></i></div>
+                <p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
             </div>
+        </div>
+        <div class="copyright">
+            © Copyright 2023 Company name All rights reserved
         </div>
     </div>
 </body>
